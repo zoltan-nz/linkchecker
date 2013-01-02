@@ -1,0 +1,13 @@
+%h1 Domain#index
+
+%table
+  %tr
+    %th Url
+    %th Title
+    %th
+
+  - @domains.each do |domain|
+    %tr
+      %td= domain.url
+      %td= domain.title
+      %td= link_to "Start", domain_start(domain)

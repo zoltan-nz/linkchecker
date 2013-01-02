@@ -11,6 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130102174030) do
+
+  create_table "domains", :force => true do |t|
+    t.string   "url"
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "links", :force => true do |t|
+    t.integer  "page_id"
+    t.string   "anchortext"
+    t.string   "url"
+    t.boolean  "outbound"
+    t.boolean  "crawled"
+    t.integer  "targetpageid"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "pages", :force => true do |t|
+    t.integer  "domain_id"
+    t.string   "url"
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end
