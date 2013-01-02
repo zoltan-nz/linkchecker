@@ -16,7 +16,7 @@ Recipes:
 ["controllers", "core", "email", "extras", "frontend", "gems", "git", "init", "models", "prelaunch", "railsapps", "readme", "routes", "saas", "setup", "testing", "views"]
 
 Preferences:
-{:git=>true, :railsapps=>"none", :dev_webserver=>"puma", :prod_webserver=>"puma", :database=>"sqlite", :templates=>"slim", :unit_test=>"rspec", :integration=>"rspec-capybara", :fixtures=>"factory_girl", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"gmail", :authentication=>"none", :authorization=>"none", :form_builder=>"simple_form", :starter_app=>"home_app", :quiet_assets=>true, :local_env_file=>true, :better_errors=>true, :ban_spiders=>true, :rvmrc=>true, :github=>true}
+{:git=>true, :railsapps=>"none", :dev_webserver=>"puma", :prod_webserver=>"puma", :database=>"sqlite", :templates=>"haml", :unit_test=>"rspec", :integration=>"cucumber", :fixtures=>"factory_girl", :frontend=>"bootstrap", :bootstrap=>"sass", :email=>"gmail", :authentication=>"none", :authorization=>"none", :form_builder=>"simple_form", :starter_app=>"home_app", :quiet_assets=>true, :local_env_file=>true, :better_errors=>true, :ban_spiders=>true, :rvmrc=>true, :github=>true}
 
 h2. Ruby on Rails
 
@@ -33,8 +33,8 @@ This application uses SQLite with ActiveRecord.
 
 h2. Development
 
-* Template Engine: Slim
-* Testing Framework: RSpec and Factory Girl
+* Template Engine: Haml
+* Testing Framework: RSpec and Factory Girl and Cucumber
 * Front-end Framework: Twitter Bootstrap (Sass)
 * Form Builder: SimpleForm
 * Authentication: None
