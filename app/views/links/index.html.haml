@@ -1,0 +1,27 @@
+%h1 Listing links
+
+%table
+  %tr
+    %th Page
+    %th Anchortext
+    %th Crawled
+    %th Outbound
+    %th Targetpageid
+    %th
+    %th
+    %th
+
+  - @links.each do |link|
+    %tr
+      %td= link.page_id
+      %td= link.anchortext
+      %td= link.crawled
+      %td= link.outbound
+      %td= link.targetpageid
+      %td= link_to 'Show', link
+      %td= link_to 'Edit', edit_link_path(link)
+      %td= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Link', new_link_path

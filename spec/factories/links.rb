@@ -2,11 +2,10 @@
 
 FactoryGirl.define do
   factory :link do
-    page_id 1
+    page_id ""
     anchortext "MyString"
-    url "MyString"
-    outbound false
     crawled false
+    outbound false
     targetpageid 1
   end
 end

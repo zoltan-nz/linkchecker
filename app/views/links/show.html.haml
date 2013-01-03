@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Page:
+  = @link.page_id
+%p
+  %b Anchortext:
+  = @link.anchortext
+%p
+  %b Crawled:
+  = @link.crawled
+%p
+  %b Outbound:
+  = @link.outbound
+%p
+  %b Targetpageid:
+  = @link.targetpageid
+
+= link_to 'Edit', edit_link_path(@link)
+\|
+= link_to 'Back', links_path

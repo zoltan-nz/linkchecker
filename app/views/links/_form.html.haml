@@ -1,0 +1,18 @@
+= simple_form_for(@link) do |f|
+  = f.error_notification
+
+  .form-inputs
+
+    = f.input :page_id
+
+    = f.input :anchortext
+
+    = f.input :crawled
+
+    = f.input :outbound
+
+    = f.input :targetpageid
+
+
+  .form-actions
+    = f.button :submit

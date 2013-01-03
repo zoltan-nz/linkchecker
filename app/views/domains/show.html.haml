@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Url:
+  = @domain.url
+%p
+  %b Title:
+  = @domain.title
+
+= link_to 'Edit', edit_domain_path(@domain)
+\|
+= link_to 'Back', domains_path

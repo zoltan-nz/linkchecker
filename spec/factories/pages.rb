@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :page do
-    domain_id 1
-    url "MyString"
+    domain_id ""
     title "MyString"
+    url "MyString"
   end
 end

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Domain:
+  = @page.domain_id
+%p
+  %b Title:
+  = @page.title
+%p
+  %b Url:
+  = @page.url
+
+= link_to 'Edit', edit_page_path(@page)
+\|
+= link_to 'Back', pages_path
