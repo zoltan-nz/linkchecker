@@ -80,4 +80,11 @@ class DomainsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def start
+    @domain = Domain.find(params[:id])
+    @domain.title = Mecha.title(@domain.url)
+    @domain.save
+    redirect_to domains_url
+  end
 end

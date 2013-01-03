@@ -8,9 +8,7 @@ Linkchecker::Application.routes.draw do
 
   resources :domains
 
-
-  resources :domain
-  get "domain/:id/start/"
+  get "domains/:id/start/" => 'domains#start', :as => :start_domain
 
   root :to => "home#index"
 end

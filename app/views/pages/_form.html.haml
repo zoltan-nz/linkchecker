@@ -3,11 +3,13 @@
 
   .form-inputs
 
-    = f.input :domain_id
+    = f.collection_select :domain_id, Domain.all, :id, :url
 
     = f.input :title
 
     = f.input :url
+
+    = f.input :indexpage
 
 
   .form-actions
