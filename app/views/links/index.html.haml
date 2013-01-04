@@ -7,6 +7,7 @@
     %th Crawled
     %th Outbound
     %th Targetpageid
+    %th Href
     %th
     %th
     %th
@@ -18,6 +19,7 @@
       %td= link.crawled
       %td= link.outbound
       %td= link.targetpageid
+      %td= link.href
       %td= link_to 'Show', link
       %td= link_to 'Edit', edit_link_path(link)
       %td= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' }

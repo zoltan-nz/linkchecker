@@ -18,7 +18,7 @@
       %td= link_to 'Show', page
       %td= link_to 'Edit', edit_page_path(page)
       %td= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' }
-      %td= link_to 'Download links'
+      %td= link_to 'Download links', startdownloadlinks_page_path(page)
 
 %br
 

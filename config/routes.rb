@@ -5,6 +5,7 @@ Linkchecker::Application.routes.draw do
 
   resources :pages
 
+  get "pages/:id/startdownloadlinks" => 'pages#startdownloadlinks', :as => :startdownloadlinks_page
 
   resources :domains
 

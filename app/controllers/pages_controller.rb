@@ -80,4 +80,14 @@ class PagesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  # Download page content with Mechanize and collect each links and insert in Link model.
+
+  def startdownloadlinks
+    @page = Page.find(params[:id])
+    Page.downloadlinks(@page)
+    redirect_to :controller => :links, :action => :index
+  end
+
 end
