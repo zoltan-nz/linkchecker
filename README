@@ -1,5 +1,13 @@
 Linkchecker
 ========================
+Work in progress...
+
+The goal of this project to generate an app which could help in SEO.
+Checking all url on a website and generate a list about broken links.
+
+
+
+________________________
 
 This application was generated with the rails_apps_composer gem:
 https://github.com/RailsApps/rails_apps_composer
